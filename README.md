@@ -1,23 +1,32 @@
-# 🚀 DESAIN WEB
+# 🌐 Desain Web HTML – Portfolio Pribadi
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Author](https://img.shields.io/badge/author-Ravi%20Achyar%20Trista%20Zhaid-orange)
 
-## 📄 Deskripsi
+Website sederhana menggunakan HTML & CSS untuk menampilkan profil pribadi, portofolio, dan informasi kontak.
 
-Proyek ini dikembangkan oleh **Ravi Achyar Trista Zhaid** (NIM: 1124102193) sebagai bagian dari tugas/portofolio/pelajaran (ubah sesuai kebutuhan). Tujuan dari proyek ini adalah untuk...
+---
 
-## 🔥 Fitur
+## 📄 Informasi
 
-- ✅ Fitur 1 (contoh: login autentikasi)
-- ✅ Fitur 2 (contoh: dashboard interaktif)
-- 🔄 Fitur 3 (contoh: integrasi API eksternal)
+- **Nama**: Ravi Achyar Trista Zhaid  
+- **NIM**: 1124102193  
+- **Tujuan**: Membuat website statis untuk portfolio pribadi menggunakan HTML dan CSS.
 
-## 📦 Instalasi
+---
+## 🚀 Fitur
 
-```bash
-git clone https://github.com/ravizhaid/nama-proyek-kamu.git
-cd nama-proyek-kamu
-npm install
-npm start
+- ✅ Tampilan responsif
+- ✅ Navigasi antar bagian
+- ✅ Bagian portofolio dan kontak
+- 🔄 Formulir kontak (coming soon)
+
+---
+
+## 🛠️ Teknologi
+
+- HTML5
+- CSS3 (Vanilla CSS)
+
+---
