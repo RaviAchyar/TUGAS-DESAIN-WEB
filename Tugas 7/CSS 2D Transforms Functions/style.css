@@ -1,0 +1,175 @@
+body {
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.box {
+    width: 150px;
+    height: 80px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@keyframes moveTranslate {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(50px, 20px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.translate {
+    animation: moveTranslate 2s infinite alternate;
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#rotateKanan {
+    animation: rotateRight 2s infinite alternate;
+}
+
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#rotateKiri {
+    animation: rotateLeft 2s infinite alternate;
+}
+
+@keyframes scaleAnim {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#scale {
+    animation: scaleAnim 2s infinite alternate;
+}
+
+@keyframes scaleXAnim {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+#scaleX {
+    animation: scaleXAnim 2s infinite alternate;
+}
+
+@keyframes scaleYAnim {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(4);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+#scaleY {
+    animation: scaleYAnim 2s infinite alternate;
+}
+
+@keyframes skewAnim {
+    0% {
+        transform: skew(0, 0);
+    }
+    50% {
+        transform: skew(20deg, 10deg);
+    }
+    100% {
+        transform: skew(0, 0);
+    }
+}
+
+#skew {
+    animation: skewAnim 2s infinite alternate;
+}
+
+@keyframes skewXAnim {
+    0% {
+        transform: skewX(0);
+    }
+    50% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewX(0);
+    }
+}
+
+#skewX {
+    animation: skewXAnim 2s infinite alternate;
+}
+
+@keyframes skewYAnim {
+    0% {
+        transform: skewY(0);
+    }
+    50% {
+        transform: skewY(10deg);
+    }
+    100% {
+        transform: skewY(0);
+    }
+}
+
+#skewY {
+    animation: skewYAnim 2s infinite alternate;
+}
+
+@keyframes matrixAnim {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    50% {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+#Matrix {
+    animation: matrixAnim 2s infinite alternate;
+}

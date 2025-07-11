@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.box {
+    width: 150px;
+    height: 80px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.transition {
+    transition: all 0.5s ease;
+}
+
+.transition:hover {
+    background-color: crimson;
+    transform: scale(1.2);
+}
+
+.transition-delay {
+    transition: all 0.5s ease;
+    transition-delay: 1s;
+}
+
+.transition-delay:hover {
+    background-color: crimson;
+    transform: scale(1.2);
+}
+
+.transition-duration {
+    transition: all 2s ease;
+}
+
+.transition-duration:hover {
+    background-color: crimson;
+    transform: scale(1.2);
+}
+
+.transition-property {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.transition-property:hover {
+    background-color: crimson;
+    transform: scale(1.2);
+}
+
+.transition-timing {
+    transition: all 0.5s ease-in-out;
+}
+
+.transition-timing:hover {
+    background-color: crimson;
+    transform: scale(1.2);
+}
