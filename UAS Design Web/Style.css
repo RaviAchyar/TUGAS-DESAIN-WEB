@@ -1,0 +1,799 @@
+/* ======= MAIN BODY======= */
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url('img/BackgroundIMG.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* ======= Header untuk logo ======= */
+
+header {
+    position: static;
+}
+
+
+/* ======= Header & Footer ======= */
+
+header,
+footer {
+    background-color: rgb(255, 255, 255);
+    color: crimson;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+/* ======= Logo di header (bagian kiri atas) ======= */
+
+.headlogo img {
+    height: 60px;
+}
+
+
+/* ======= Foooter Logo dan Icon Sosmed ======= */
+
+.logofooter img {
+    height: 100px;
+}
+
+.sosmed-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sosmed-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/* ======= Kontainer utama untuk navbar dan logo header ======= */
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ======= Navbar Header ======= */
+
+.navbar {
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 0px;
+}
+
+
+/* Awal: Navbar ul selalu tanpa bullet & margin */
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar li a {
+    color: crimson;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #ffe2d1;
+    text-decoration: none;
+}
+
+.navbar li a.active {
+    color: #ffe2d1;
+    /* contoh: warna lebih gelap */
+}
+
+
+/* ======= CSS Produk ======= */
+
+.produk-container {
+    background: rgb(255, 255, 255);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ======= CSS Produk Grid======= */
+
+.produk-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.produk-card {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.produk-card img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.produk-card h2 {
+    font-size: 18px;
+    margin: 0.5em 0;
+    color: crimson;
+}
+
+.produk-card p {
+    font-weight: bold;
+    color: #444;
+}
+
+
+/* ======= CSS Beranda ======= */
+
+.beranda-container {
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ======= CSS Beranda Slides Promo ======= */
+
+.img-promo {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+.img-promo img {
+    width: 100%;
+}
+
+.wrapper-beranda {
+    width: 800px;
+    margin: auto;
+    border-radius: 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+#slide-1:target~.img-promo {
+    margin-left: 0%;
+}
+
+#slide-2:target~.img-promo {
+    margin-left: -100%;
+}
+
+#slide-3:target~.img-promo {
+    margin-left: -200%;
+}
+
+#slide-4:target~.img-promo {
+    margin-left: -300%;
+}
+
+.nav-promo a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: floralwhite;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.nav-promo a:hover {
+    background-color: #444;
+}
+
+.nav-promo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.nama-event a {
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nama-event a:hover {
+    color: #b3002d;
+    /* warna lebih gelap saat hover */
+    text-decoration: none;
+}
+
+
+/* ======= CSS Beranda Event ======= */
+
+.Event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.text-event {
+    flex: 1;
+    text-align: center;
+    color: crimson;
+    margin-top: 50px;
+}
+
+.card-event {
+    flex: 1;
+    text-align: center;
+}
+
+.card-event img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tanggal-event {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.nama-event {
+    font-size: 16px;
+    color: crimson;
+    margin-top: 4px;
+}
+
+
+/* ======= CSS Temukan_Kami ======= */
+
+.temukan_kami-container {
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.domisili iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.temukan_kami-container h1 {
+    text-align: center;
+    color: crimson;
+    margin-bottom: 30px;
+}
+
+.domisili-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.domisili {
+    flex: 1 1 45%;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.domisili h2 {
+    color: #b3002d;
+    margin-bottom: 10px;
+}
+
+.domisili p {
+    color: #444;
+    margin: 4px 0;
+}
+
+.jam-kerja {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.jam-kerja h3 {
+    color: crimson;
+    margin-bottom: 8px;
+}
+
+.jam-kerja p {
+    color: #555;
+    margin: 3px 0;
+}
+
+
+/* ======= CSS Tentang ======= */
+
+.tentang-container {
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tentang-container img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 500px;
+}
+
+.tentang-container h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: crimson;
+}
+
+.tentang-content {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* ======= CSS Tentang. Logo Sertifikat ======= */
+
+.logo-sertifikat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.logo-sertifikat img {
+    max-height: 80px;
+    object-fit: contain;
+}
+
+
+/* ======= CSS Kontak ======= */
+
+.kontak-container {
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.kontak-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.kontak-container input[type="text"],
+.kontak-container input[type="email"],
+.kontak-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.kontak-container input:focus,
+.kontak-container textarea:focus {
+    border-color: crimson;
+    outline: none;
+}
+
+.kontak-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ======= CSS Kontak - FORm ======= */
+
+#form-kontak {
+    flex: 1 1 55%;
+    min-width: 320px;
+}
+
+.Order {
+    flex: 1 1 40%;
+    min-width: 250px;
+    text-align: center;
+}
+
+#form-kontak h1,
+.Order h1 {
+    font-size: 22px;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+#form-kontak input[type="text"],
+#form-kontak input[type="email"],
+#form-kontak textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+#form-kontak input:focus,
+#form-kontak textarea:focus {
+    border-color: crimson;
+    outline: none;
+}
+
+#form-kontak button {
+    padding: 10px 20px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: crimson;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#form-kontak button:hover {
+    background-color: #b3002d;
+}
+
+
+/* ======= CSS Kontak - Order NOw======= */
+
+.IMGOrderNow img,
+.IMGWAorder img {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.IMGWAorder {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.IMGWAorder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.IMGWAorder img {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ======= RESPONSIVE ======= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produk-container,
+.beranda-container,
+.temukan_kami-container,
+.tentang-container,
+.kontak-container {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .produk-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .Event {
+        gap: 30px;
+    }
+    .wrapper-beranda {
+        width: 100%;
+    }
+    .nav-promo {
+        margin-top: 300px;
+        /* turunkan posisinya agar sesuai */
+    }
+    .kontak-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #form-kontak,
+    .Order {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .produk-card img {
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .produk-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .Event {
+        flex-direction: column;
+    }
+    .headlogo img {
+        width: 100px;
+    }
+    h1,
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .kontak-container {
+        padding: 20px;
+    }
+    .wrapper-beranda {
+        width: 100%;
+    }
+    .nav-promo {
+        margin-top: 250px;
+    }
+    .logofooter img {
+        height: 60px;
+    }
+}
+
+.tentang-container img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 300px;
+    height: auto;
+}
+
+.kontak-container {
+    gap: 20px;
+    padding: 30px;
+}
+
+#form-kontak {
+    flex: 1 1 50%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.Order {
+    flex: 1 1 40%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#form-kontak input[type="text"],
+#form-kontak input[type="email"],
+#form-kontak textarea {
+    margin-bottom: 10px;
+}
+
+#form-kontak h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    z-index: 1001;
+}
+
+.menu-icon span {
+    background: crimson;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.4s ease;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+    top: 10px;
+}
+
+.menu-icon span:nth-child(3) {
+    top: 20px;
+}
+
+.menu-toggle:checked+.menu-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.menu-toggle:checked+.menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked+.menu-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+@media (max-width: 750px) {
+    .menu-icon {
+        display: block;
+    }
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0);
+        transition: right 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+    }
+    .menu-toggle:checked+.menu-icon+ul {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.sosmed-slide {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: auto;
+    margin-bottom: 100px;
+}
+
+.sosmed-slide-label {
+    font-size: 13px;
+    color: #999;
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sosmed-slide a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: crimson;
+    font-size: 14px;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.sosmed-slide a:hover {
+    color: #b3002d;
+}
+
+.sosmed-slide img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 750px) {
+    .sosmed-slide {
+        display: flex;
+    }
+}
+
+@media (max-width: 750px) {
+    footer .sosmed-icons {
+        display: none;
+    }
+}
+
+
+/* ======= MAIN BODY ======= */
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
